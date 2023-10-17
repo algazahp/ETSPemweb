@@ -2,7 +2,7 @@ $.ajax({
   url: "http://159.223.51.203/api/bio",
   success: (results) => {
     console.log(results);
-    const variables = results.Search;
+    const variables = results;
     let cards = "";
     variables.forEach((v) => {
       cards += `<div class="col-xl-3 col-md-6 mb-4">
